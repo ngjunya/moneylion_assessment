@@ -14,13 +14,15 @@ Assessment APIs located in App.js file.
 
 Steps to test:
 
-1 : Edit the database configuration in config.json(development) to your MySQL database environment
+1 : run command "npm install"
 
-2 : Create a database named "moneylion"
+2 : Edit the database configuration in config.json(development) to your MySQL database environment
 
-3 : run command "sequelize db:migrate" in terminal
+3 : Create a database named "moneylion"
 
-4 : create user with api below
+4 : run command "sequelize db:migrate" in terminal
+
+5 : create user with api below 
 
 POST : http://localhost:8000/
 
@@ -36,11 +38,11 @@ Body :
     
 }
 
-5. test assessment GET api
+6. test assessment GET api
 
 GET http://localhost:8000/feature?email=world@gmail.com&featureName=Delete
 
-6. test assessment POST api
+7. test assessment POST api
 
 POST http://localhost:8000/feature
 
@@ -55,9 +57,3 @@ Body:
     "enable":false
     
 }
-
-
-
-
-
-
