@@ -12,24 +12,35 @@ ORM : Sequelize
 
 Assessment APIs located in App.js file.
 
-There are two features : Edit and Delete.
+Steps to test:
 
-There are two user's email : test@gmail.com and hello@gmail.com.
+1 : Edit the database configuration in config.json(development) to your MySQL database environment
 
-User1 : test@gmail.com 
-- only applicable for Edit feature
-- Product manager can switch accesses of this user on Edit feature only.
-- This user is not listed as a member of Delete feature. 
+2 : Create a database named "moneylion"
 
-User 2 : hello@gmail.com
-- applicable for Edit and Delete features
-- Product manager can switch accesses of this user on Edit and Delete features. 
+3 : run command "sequelize db:migrate" in terminal
 
-Sample Postman request for GET API:
+4 : create user with api below
 
-GET http://localhost:8000/feature?email=hello@gmail.com&featureName=Edit
+POST : http://localhost:8000/
 
-Sample Postman request for POST API:
+Body : 
+
+{
+
+    "featureName":"Delete",
+    
+    "email":"world@gmail.com",
+    
+    "enable":false
+    
+}
+
+5. test assessment GET api
+
+GET http://localhost:8000/feature?email=world@gmail.com&featureName=Delete
+
+6. test assessment POST api
 
 POST http://localhost:8000/feature
 
@@ -44,6 +55,9 @@ Body:
     "enable":false
     
 }
+
+
+
 
 
 
