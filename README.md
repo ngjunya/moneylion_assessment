@@ -19,7 +19,7 @@ User1 : test@gmail.com
 
 User 2 : hello@gmail.com
 - applicable for Edit and Delete features
-- Product manager can swtich accesses of this user on Edit and Delete features. 
+- Product manager can switch accesses of this user on Edit and Delete features. 
 
 Sample Postman request for GET API:
 
