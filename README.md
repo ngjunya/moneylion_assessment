@@ -2,6 +2,10 @@
 
 This assessment is done by using Nodejs/Expressjs framework. 
 
+To start the server : npm start 
+
+Port : 8000
+
 Assessment APIs located in App.js file.
 
 There are two features : Edit and Delete.
