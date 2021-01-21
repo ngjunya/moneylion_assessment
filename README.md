@@ -14,7 +14,7 @@ User1 : test@gmail.com
 - This user is not listed as a member of Delete feature. 
 
 User 2 : hello@gmail.com
-- applicable for Edit and Delete feature
+- applicable for Edit and Delete features
 - Product manager can swtich accesses of this user on Edit and Delete features. 
 
 Sample Postman request for GET API:
